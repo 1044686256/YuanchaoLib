@@ -10,14 +10,7 @@ using namespace YuanchaoLib;
 
 int main()
 {
-    Object* obj1 = new Test();
-    Object* obj2 = new Child();
 
-    cout << "obj1 is :" << obj1<<endl;
-    cout << "obj2 is :" << obj2<<endl;
-
-    delete obj1;
-    delete obj2;
 
     return 0;
 }
