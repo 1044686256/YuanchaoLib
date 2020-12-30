@@ -1,6 +1,7 @@
-
 #ifndef SMARTPOINTER_H
 #define SMARTPOINTER_H
+
+#include "Object.h"
 /*
 * 功能：智能指针类模板
 * Aauthor：yuanchao.wu
@@ -8,7 +9,7 @@
 */
 namespace YuanchaoLib {
 template <typename T>
-class SmartPointer
+class SmartPointer : public Object
 {
 protected:
     T* m_pointer;

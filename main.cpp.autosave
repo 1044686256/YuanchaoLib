@@ -10,7 +10,6 @@ using namespace YuanchaoLib;
 
 int main()
 {
-    SmartPointer<int>* sp = new SmartPointer<int>();
     return 0;
 }
 
