@@ -13,7 +13,7 @@ class SmartPointer
 protected:
     T* m_pointer;
 public:
-    SmartPointer(T* p = nullptr)
+    SmartPointer(T* p = NULL)
     {
         m_pointer = p;
     }
@@ -22,7 +22,7 @@ public:
     {
         m_pointer = obj.m_pointer;
 
-        const_cast<SmartPointer<T> & >(obj).m_pointer = nullptr;
+        const_cast<SmartPointer<T> & >(obj).m_pointer = NULL;
     }
 
     SmartPointer<T>&operator = (const SmartPointer<T>& obj)
@@ -31,7 +31,7 @@ public:
         {
             delete m_pointer;
             m_pointer = obj.m_pointer;
-            const_cast<SmartPointer<T>&>(obj).m_pointer = nullptr;
+            const_cast<SmartPointer<T>&>(obj).m_pointer = NULL;
         }
         return *this;
 
@@ -49,7 +49,7 @@ public:
 
     bool isNull()
     {
-        return (m_pointer == nullptr);
+        return (m_pointer == NULL);
     }
 
     T* get()

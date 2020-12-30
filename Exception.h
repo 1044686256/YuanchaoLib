@@ -40,7 +40,7 @@ public:
 class ArithmeticException : public Exception
 {
 public:
-    ArithmeticException():Exception(nullptr){}
+    ArithmeticException():Exception(0){}
     ArithmeticException(const char* message):Exception(message){}
     ArithmeticException(const char* message,int line):Exception(message,line){}
     ArithmeticException(const char* message,char* file,int line):Exception(message,file,line){}
@@ -56,7 +56,7 @@ public:
 class NullPointerException : public Exception
 {
 public:
-    NullPointerException():Exception(nullptr){}
+    NullPointerException():Exception(0){}
     NullPointerException(const char* message):Exception(message){}
     NullPointerException(const char* message,int line):Exception(message,line){}
     NullPointerException(const char* message,char* file,int line):Exception(message,file,line){}
@@ -72,7 +72,7 @@ public:
 class IndexOutOfBoundsException : public Exception
 {
 public:
-    IndexOutOfBoundsException():Exception(nullptr){}
+    IndexOutOfBoundsException():Exception(0){}
     IndexOutOfBoundsException(const char* message):Exception(message){}
     IndexOutOfBoundsException(const char* message,int line):Exception(message,line){}
     IndexOutOfBoundsException(const char* message,char* file,int line):Exception(message,file,line){}
@@ -89,7 +89,7 @@ public:
 class NoEnoughMemoryException : public Exception
 {
 public:
-    NoEnoughMemoryException():Exception(nullptr){}
+    NoEnoughMemoryException():Exception(0){}
     NoEnoughMemoryException(const char* message):Exception(message){}
     NoEnoughMemoryException(const char* message,int line):Exception(message,line){}
     NoEnoughMemoryException(const char* message,char* file,int line):Exception(message,file,line){}
@@ -106,7 +106,7 @@ public:
 class InvalidParameterException : public Exception
 {
 public:
-    InvalidParameterException():Exception(nullptr){}
+    InvalidParameterException():Exception(0){}
     InvalidParameterException(const char* message):Exception(message){}
     InvalidParameterException(const char* message,int line):Exception(message,line){}
     InvalidParameterException(const char* message,char* file,int line):Exception(message,file,line){}

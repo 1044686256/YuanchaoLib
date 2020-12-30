@@ -7,7 +7,7 @@ namespace YuanchaoLib
 void Exception::init(const char* message,const char* file,int line)
 {
     m_message  = strdup(message);
-    if(file != nullptr)
+    if(file != NULL)
     {
         char sl[16]={0};
         itoa(line,sl,10);
@@ -18,16 +18,16 @@ void Exception::init(const char* message,const char* file,int line)
         m_location = strcat(m_location,sl);
     }
     else {
-        m_location = nullptr;
+        m_location = NULL;
     }
 }
 Exception::Exception(const char* message)
 {
-    init(message,nullptr,0);
+    init(message,NULL,0);
 }
 Exception::Exception(const char* file,int line)
 {
-    init(nullptr,file,line);
+    init(NULL,file,line);
 }
 Exception::Exception(const char* message,const char* file,int line)
 {
