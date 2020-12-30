@@ -12,3 +12,6 @@ HEADERS += \
     Exception.h \
     SmartPointer.h \
     Object.h
+
+OTHER_FILES += \
+    README.md
