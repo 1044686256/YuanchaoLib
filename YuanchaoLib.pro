@@ -11,7 +11,9 @@ SOURCES += \
 HEADERS += \
     Exception.h \
     SmartPointer.h \
-    Object.h
+    Object.h \
+    List.h \
+    SeqList.h
 
 OTHER_FILES += \
     README.md

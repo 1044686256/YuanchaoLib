@@ -3,6 +3,8 @@
 #include <smartpointer.h>
 #include "exception.h"
 #include "Object.h"
+#include "list.h"
+#include "SeqList.h"
 
 using namespace std;
 using namespace YuanchaoLib;
@@ -10,11 +12,15 @@ using namespace YuanchaoLib;
 
 int main()
 {
-    SmartPointer<int>* sp = new SmartPointer<int>();
+    SeqList <string>* sql;
     return 0;
 }
-
 /*
+  class4: Test List class
+* List<int>* l =NULL;
+*/
+/*
+  class3:Object Test class
 class Test : public Object
 {
 public :
